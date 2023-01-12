@@ -1,128 +1,60 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Travel App</title>
-
-    <!-- Foundation Framework CSS Reference -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/css/foundation.css">
-
-    <!-- Custom CSS Reference -->
     <link rel="stylesheet" href="./Assets/css/app.css">
-  </head>
+</head>
 
 <body>
-
-  <!-- Header Container -->
-  <div class="grid-y medium-grid-frame">
-    <div class="cell grid-x align-middle header">
-
-      <!-- App Logo -->
-      <img src="./Assets/Images/logo.jpeg" alt="" class="logo">
-
-      <!-- App Title -->
-      <h1>My Travel App</h1>
-    </div>
-
-    <!-- Weather Forecast Container -->
-    <div class="cell grid-x grid-margin-x align-center">
-      <h1>Weather Forecase Goes Here</h1>
-    </div>
-
-    <!-- Left Container -->
-    <div class="cell medium-auto medium-cell-block-container">
-      <div class="grid-x grid-padding-x">
-        <div class="cell medium-2 large-2 medium-cell-block-y">
-          
-          <!-- Carousel Component -->
-          <div class="row">
-            <div class="columns">
-              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-                <ul class="orbit-container">
-                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-                  <li class="is-active orbit-slide">
-                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-                  </li>
-                  <li class="orbit-slide">
-                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/02.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-                  </li>
-                  <li class="orbit-slide">
-                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/03.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Encapsulating</figcaption>
-                  </li>
-                  <li class="orbit-slide">
-                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/04.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Outta This World</figcaption>
-                  </li>
-                </ul>
-                <nav class="orbit-bullets">
-                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-                  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-                </nav>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Input Component -->
-          <div class="input">
-            <input type="search" class="loc">
-            <input type="submit" value="submit">
-          </div>
-
-          <!-- Vertical Menu Component -->
-          <ul class="vertical menu">
-            <li>day1</li>
-            <li>day2</li>
-            <li>day3</li>
-            <li>day4</li>
-            <li>day5</li>
-          </ul>
+    <div class="grid-y medium-grid-frame">
+        <!-- Header Container -->
+        <div class="cell grid-x align-middle header">
+            <h1>My Travel App</h1>
         </div>
 
-        <!-- Right Pane Container -->
+
+
+        <!-- Left Container -->
         <div class="cell medium-auto medium-cell-block-container">
-          <div class="cell grid-x grid-margin-x align-center">
-            <h2>Activities & Dining Options</h2>
-          </div>
-          
-          <div class="grid-x align-center">
-            <div class="">
-              <ul class="vertical menu">
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-                <li><a href="#">Four</a></li>
-              </ul>
+            <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell medium-4 large-2 medium-cell-block-y">
+
+                    <!-- Input Component -->
+                    <div class="input">
+                        <input type="text" class="search">
+                        <input type="text" class="state">
+                        <input type="text" class="country">
+                        <input type="submit" value="submit" class="submitbtn">
+                    </div>
+
+                    <!-- Vertical Menu Component -->
+                    <ul class="vertical menu history"></ul>
+                </div>
+                <!-- Right Pane Container -->
+                <div class="cell medium-auto medium-cell-block-container">
+                    <!-- Weather Forecast Container -->
+                    <div class="cell grid-x grid-margin-x align-center">
+                    </div>
+                </div>
             </div>
-            
-            <div class="">
-              <ul class="vertical menu">
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-                <li><a href="#">Four</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  
+
     <!-- Compressed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
+        crossorigin="anonymous"></script>
     <script async src="https://cse.google.com/cse.js?cx=96e290fb0346947d2"></script>
     <script src="./Assets/js/vendor/jquery.js"></script>
     <script src="./Assets/js/vendor/what-input.js"></script>
     <script src="./Assets/js/vendor/foundation.js"></script>
-    <script src="./Assets/js/app.js"></script>
-  </body>
+    <script src="./Assets/js/script.js"></script>
+</body>
+
 </html>

@@ -11,6 +11,7 @@ const creds = {
 
 const input = $(document).search
 
+console.log(input);
 fetch('https://api.yelp.com/v3/businesses/search?location=' + input + '&term=restaurants&radius=40000&attributes=&sort_by=best_match&limit=20', creds)
   .then(response => response.json())
   .then(response => console.log(response))

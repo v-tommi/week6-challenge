@@ -36,13 +36,14 @@ document.querySelector('.searchbtn').onclick = getLocation
 
 const options = {
     method: 'GET',
+    mode: 'no-cors',
     headers: {
       accept: 'application/json',
       Authorization: 'qBFgx-BuuVc5NkZTKQCBYzhaYm3CAgBfniTZy0Um3DpdKg7z2SBb0GFkD_oh_zUI-4Zi8PdOiFZCwCHLw61efLuFZFmvLjFk8K6wouulsUlxuCgjU8yi6L2HzLu8Y3Yx'
     }
   };
   
-  fetch('https://api.yelp.com/v3/businesses/search?location=dallas&sort_by=best_match&limit=20', options)
+  fetch('https://api.yelp.com/v3/businesses/Golden%20Boy%20Pizza', options)
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));

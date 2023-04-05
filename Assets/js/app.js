@@ -1,4 +1,3 @@
-/*
 function getLocation() {
     let loc = document.querySelector('#searchbox').value;
     let appid = '5b363f0d85d1d8e70ad27ba598ac067c';
@@ -32,18 +31,3 @@ function createCard() {
 document.querySelector('.searchbtn').onclick = getLocation
 //document.querySelector('.searchbtn').addEventListener('click', getWeather)
 
-*/
-
-const options = {
-    method: 'GET',
-    mode: 'no-cors',
-    headers: {
-      accept: 'application/json',
-      Authorization: 'qBFgx-BuuVc5NkZTKQCBYzhaYm3CAgBfniTZy0Um3DpdKg7z2SBb0GFkD_oh_zUI-4Zi8PdOiFZCwCHLw61efLuFZFmvLjFk8K6wouulsUlxuCgjU8yi6L2HzLu8Y3Yx'
-    }
-  };
-  
-  fetch('https://api.yelp.com/v3/businesses/Golden%20Boy%20Pizza', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));

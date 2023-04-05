@@ -1,0 +1,51 @@
+.history-menu {
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 3px solid black;
+}
+
+.history button {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.history button:hover {
+    background-color: black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.header {
+    background-color: lightblue;
+}
+
+.logo {
+    width: 150px;
+    padding-right: 10px;
+}
+
+.card-height {
+    height: 300px;
+}
+
+.forecast-heading {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+
+.forecast-heading h4 {
+    border-bottom: 5px solid white;
+}
+
+.data-label {
+    font-weight: bolder;
+}
